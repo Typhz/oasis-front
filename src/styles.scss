@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
 @import "primeng/resources/themes/lara-dark-green/theme.css";
 @import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
+html, body {
+  background-color: #151515;
+  color: #f8f8f8;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+  --surface-0: #ffffff;
+  --surface-50: #FAFAFA;
+  --surface-100: #F5F5F5;
+  --surface-200: #EEEEEE;
+  --surface-300: #E0E0E0;
+  --surface-400: #BDBDBD;
+  --surface-500: #9E9E9E;
+  --surface-600: #757575;
+  --surface-700: #616161;
+  --surface-800: #424242;
+  --surface-900: #212121!important;
+
+  --gray-900: #2f2f2f !important;
+}

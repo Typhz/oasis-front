@@ -1,0 +1,21 @@
+main {
+  background-color: #151515;
+  height: 100%;
+}
+
+.side-image {
+  height: 100%;
+  float: left;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.2rem;
+  margin: auto;
+}
+
+.enterprise-woman {
+  object-fit: cover;
+}
