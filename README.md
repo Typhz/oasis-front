@@ -1,27 +1,18 @@
-# OasisFront
+# Oasis Finance
+### Sobre o Projeto
+Este projeto é um aplicativo open-source desenvolvido em Angular, destinado a ajudar os usuários a gerenciar suas finanças pessoais de maneira eficiente e intuitiva. Nosso objetivo é fornecer uma ferramenta que seja ao mesmo tempo poderosa e fácil de usar, permitindo que os usuários acompanhem suas despesas, receitas e invistam na sua educação financeira.
+![auth page](.docs/auth_sign-in.png)
+### Funcionalidades
+Acompanhamento de Despesas e Receitas: Registre e acompanhe suas despesas e receitas diárias, mensais e anuais.
+Orçamento Personalizado: Crie orçamentos personalizados para diferentes categorias de gastos.
+Análises Financeiras: Obtenha insights sobre seus hábitos de gastos com gráficos e relatórios detalhados.
+Educação Financeira: Acesso a artigos e dicas para melhorar sua saúde financeira.
+Tecnologias Utilizadas
+* Angular: Framework principal para o desenvolvimento da aplicação.
+* PrimeNG: Para o design responsivo e moderno da interface.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+### Como Contribuir
+Contribuições são sempre bem-vindas! Se você tem interesse em contribuir com o projeto, por favor, leia nosso CONTRIBUTING.md para mais informações sobre como enviar pull requests.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
