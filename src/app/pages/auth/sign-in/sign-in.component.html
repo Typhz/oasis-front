@@ -20,28 +20,45 @@
       >
     </div>
 
-    <div class="w-6">
+    <form [formGroup]="loginForm" class="w-6">
       <label for="email1" class="block font-medium mb-2">Email</label>
       <input
+        formControlName="email"
+        required
         id="email1"
         type="text"
         placeholder="E-mail"
         pInputText
         class="bg-gray-900 w-full mb-3"
+        [ngClass]="{
+          'ng-invalid':
+            (loginForm.get('email')?.invalid &&
+              loginForm.get('email')?.dirty) ||
+            loginForm.get('email')?.touched
+        }"
       />
 
       <label for="password1" class="block font-medium mb-2">Senha</label>
       <input
+        formControlName="password"
+        required
         id="password1"
         type="password"
         placeholder="Senha"
         pInputText
         class="bg-gray-900 w-full mb-3"
+        [ngClass]="{
+          'ng-invalid':
+            (loginForm.get('password')?.invalid &&
+              loginForm.get('password')?.dirty) ||
+            loginForm.get('password')?.touched
+        }"
       />
 
-      <div class="flex align-items-center justify-content-between mb-6">
+      <div class="flex align-items-center justify-content-between mb-4">
         <div class="flex align-items-center">
           <p-checkbox
+            formControlName="remember"
             id="rememberme"
             [binary]="true"
             styleClass="mr-2"
@@ -53,12 +70,20 @@
           >Esqueci minha senha</a
         >
       </div>
+      <div class="mb-4">
+        <p-messages
+          [(value)]="messages"
+          [enableService]="false"
+          [closable]="false"
+        ></p-messages>
+      </div>
 
       <p-button
         label="Entrar"
         [loading]="loading"
-        (onClick)="load()"
+        (onClick)="signIn()"
         icon="pi pi-check"
+        type="submit"
       ></p-button>
 
       <footer class="footer">
@@ -68,7 +93,7 @@
           </span>
         </div>
       </footer>
-    </div>
+    </form>
   </div>
   <img
     ngSrc="assets/auth/sign-in/enterprise-woman.jpg"
