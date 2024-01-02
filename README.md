@@ -1,18 +1,18 @@
 # Oasis Finance
-### Sobre o Projeto
-Este projeto é um aplicativo open-source desenvolvido em Angular, destinado a ajudar os usuários a gerenciar suas finanças pessoais de maneira eficiente e intuitiva. Nosso objetivo é fornecer uma ferramenta que seja ao mesmo tempo poderosa e fácil de usar, permitindo que os usuários acompanhem suas despesas, receitas e invistam na sua educação financeira.
+### About the Project
+This project is an open-source application developed in Angular, aimed at helping users efficiently and intuitively manage their personal finances. Our goal is to provide a tool that is both powerful and easy to use, allowing users to track their expenses, income, and invest in their financial education.
 ![auth page](.docs/auth_sign-in.png)
-### Funcionalidades
-Acompanhamento de Despesas e Receitas: Registre e acompanhe suas despesas e receitas diárias, mensais e anuais.
-Orçamento Personalizado: Crie orçamentos personalizados para diferentes categorias de gastos.
-Análises Financeiras: Obtenha insights sobre seus hábitos de gastos com gráficos e relatórios detalhados.
-Educação Financeira: Acesso a artigos e dicas para melhorar sua saúde financeira.
-Tecnologias Utilizadas
-* Angular: Framework principal para o desenvolvimento da aplicação.
-* PrimeNG: Para o design responsivo e moderno da interface.
+### Features
+Expense and Income Tracking: Record and track your daily, monthly, and annual expenses and income.
+Custom Budgeting: Create personalized budgets for different spending categories.
+Financial Analysis: Gain insights into your spending habits with detailed charts and reports.
+Financial Education: Access articles and tips to improve your financial health.
+Technologies Used
+* Angular: The main framework for the development of the application.
+* PrimeNG: For the responsive and modern design of the interface.
 
-### Como Contribuir
-Contribuições são sempre bem-vindas! Se você tem interesse em contribuir com o projeto, por favor, leia nosso CONTRIBUTING.md para mais informações sobre como enviar pull requests.
+### How to Contribute
+Contributions are always welcome! If you are interested in contributing to the project, please read our CONTRIBUTING.md for more information on how to submit pull requests.
 
-### Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+### License
+This project is under the MIT license. See the LICENSE file for more details.
