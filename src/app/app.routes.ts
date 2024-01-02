@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
 import { authGuard } from './core/guards/auth.guard';
+import { SignUpComponent } from './pages/auth/sign-up/sign-up.component';
 
 export const routes: Routes = [
   // TODO: Use module lazy loading
@@ -10,6 +11,10 @@ export const routes: Routes = [
       {
         path: 'sign-in',
         component: SignInComponent,
+      },
+      {
+        path: 'sign-up',
+        component: SignUpComponent,
       },
     ],
   },
