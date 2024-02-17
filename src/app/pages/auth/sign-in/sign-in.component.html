@@ -22,7 +22,7 @@
       >
     </div>
 
-    <form [formGroup]="loginForm" class="w-6">
+    <form [formGroup]="loginForm" class="w-6" autocomplete="on">
       <label for="email1" class="block font-medium mb-2">Email</label>
       <input
         formControlName="email"
@@ -33,10 +33,7 @@
         pInputText
         class="bg-gray-900 w-full mb-3"
         [ngClass]="{
-          'ng-invalid':
-            (loginForm.get('email')?.invalid &&
-              loginForm.get('email')?.dirty) ||
-            loginForm.get('email')?.touched
+          'ng-invalid': loginForm.get('email')?.invalid
         }"
       />
 
@@ -50,10 +47,7 @@
         pInputText
         class="bg-gray-900 w-full mb-3"
         [ngClass]="{
-          'ng-invalid':
-            (loginForm.get('password')?.invalid &&
-              loginForm.get('password')?.dirty) ||
-            loginForm.get('password')?.touched
+          'ng-invalid': loginForm.get('password')?.invalid
         }"
       />
 

@@ -49,6 +49,20 @@ export class SignUpComponent implements OnInit {
   }
 
   signUp() {
-    console.log('');
+    this.authService.signUp(this.loginForm.value).subscribe({
+      next: () => {
+        this.loading = false;
+      },
+      error: () => {
+        this.loading = false;
+        this.messages = [
+          {
+            severity: 'error',
+            summary: 'Error',
+            detail: 'Error',
+          },
+        ];
+      },
+    });
   }
 }
