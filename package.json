@@ -10,6 +10,9 @@
     "lint": "ng lint",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "jwt-decode": "^4.0.0",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primeng": "^17.2.0",
@@ -50,6 +54,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.1.1",
     "prettier-eslint": "^16.2.0",
     "typescript": "~5.2.2"
