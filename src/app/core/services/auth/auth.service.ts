@@ -35,6 +35,21 @@ export class AuthService {
       );
   }
 
+  public signUp(data: { name: string; email: string; password: string }) {
+    return this.http
+      .post<AuthResponseModel>(`${environment.apiUrl}/Customer/sign-up`, data, {
+        headers: this.headers,
+      })
+      .pipe(
+        map((response: AuthResponseModel) => {
+          this.setToken(response.token);
+          this.setIsLogged(true);
+          this.reloadSystem();
+          return response;
+        }),
+      );
+  }
+
   public getToken(): string | null {
     const token = getDataStorage('access_token', 'w-auth');
     this.isLogged.next(!!token);

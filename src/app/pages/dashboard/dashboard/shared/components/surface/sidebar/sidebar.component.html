@@ -1,0 +1,51 @@
+<aside>
+  <img src="assets/brand/white-brand.png" width="80" alt="brand" />
+  <div class="flex flex-column justify-content-between my-4 h-full">
+    <div class="flex flex-column">
+      <p-button
+        icon="pi pi-home"
+        [rounded]="true"
+        [text]="true"
+        size="large"
+        pTooltip="Página Inicial"
+      >
+      </p-button>
+      <p-button
+        icon="pi pi-credit-card"
+        [rounded]="true"
+        [text]="true"
+        size="large"
+        pTooltip="Meus Cartões"
+      >
+      </p-button>
+      <p-button
+        icon="pi pi-briefcase"
+        [rounded]="true"
+        [text]="true"
+        size="large"
+        pTooltip="Meus Investimentos"
+      >
+      </p-button>
+      <p-button
+        icon="pi pi-chart-bar"
+        [rounded]="true"
+        [text]="true"
+        size="large"
+        pTooltip="Estatísticas"
+        [disabled]="true"
+      >
+      </p-button>
+    </div>
+    <div class="flex flex-column">
+      <p-menu #menu [model]="items" [popup]="true"></p-menu>
+      <p-button
+        (click)="menu.toggle($event)"
+        icon="pi pi-user"
+        [rounded]="true"
+        [text]="true"
+        size="large"
+      >
+      </p-button>
+    </div>
+  </div>
+</aside>
